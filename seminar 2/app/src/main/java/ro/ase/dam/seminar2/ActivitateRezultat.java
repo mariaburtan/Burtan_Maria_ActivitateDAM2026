@@ -1,9 +1,13 @@
 package ro.ase.dam.seminar2;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+=======
+import android.os.Bundle;
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +17,11 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ActivitateRezultat extends AppCompatActivity {
 
+<<<<<<< HEAD
     private int nr1, nr2;
 
+=======
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +32,7 @@ public class ActivitateRezultat extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+<<<<<<< HEAD
 
         Intent it=getIntent();
 
@@ -53,5 +61,7 @@ public class ActivitateRezultat extends AppCompatActivity {
         finish();
 
         //metode dif -> stive diferite de mem
+=======
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
     }
 }

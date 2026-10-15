@@ -1,5 +1,6 @@
 package ro.ase.dam.seminar2;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +9,12 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
+=======
+import android.os.Bundle;
+import android.util.Log;
+
+import androidx.activity.EdgeToEdge;
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -52,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e("Err seminar","On stop!");
     }
 
+<<<<<<< HEAD
     public void deschideActivitate(View view)
     {
         Intent it=new Intent(this,ActivitateRezultat.class);
@@ -74,3 +82,6 @@ public class MainActivity extends AppCompatActivity {
 
 //stiva de activitati
 
+=======
+}
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db

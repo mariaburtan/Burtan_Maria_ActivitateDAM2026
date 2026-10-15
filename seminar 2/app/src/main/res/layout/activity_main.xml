@@ -13,6 +13,7 @@
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,5 +26,9 @@
         android:text="Deschide Aplicatia"
         tools:layout_editor_absoluteX="137dp"
         tools:layout_editor_absoluteY="296dp" />
+=======
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 
 </androidx.constraintlayout.widget.ConstraintLayout>

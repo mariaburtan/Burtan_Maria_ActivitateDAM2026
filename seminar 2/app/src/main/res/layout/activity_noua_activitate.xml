@@ -11,6 +11,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Deschide Aplicatia (NOUA)"
         android:onClick="deschideActivitate"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,4 +20,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
         tools:ignore="OnClick" />
+=======
+        android:text="Button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="465dp" />
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 </androidx.constraintlayout.widget.ConstraintLayout>

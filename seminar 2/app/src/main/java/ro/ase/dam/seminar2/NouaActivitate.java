@@ -3,16 +3,25 @@ package ro.ase.dam.seminar2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
+=======
+
+import androidx.activity.EdgeToEdge;
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class NouaActivitate extends AppCompatActivity {
+<<<<<<< HEAD
+=======
+
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +34,7 @@ public class NouaActivitate extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
    /*@Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -53,4 +63,11 @@ public class NouaActivitate extends AppCompatActivity {
         startActivity(intent);
     }
 
+=======
+    public void  openActiviy(View view){
+
+        Intent it= new Intent(this, ActivitateRezultat.class);
+        startActivity(it);
+    }
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 }

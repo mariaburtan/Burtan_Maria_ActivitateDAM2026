@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">seminar2</string>
+<<<<<<< HEAD
     <string name="inapoi">Inapoi</string>
+=======
+>>>>>>> f1dcd90883c5856c2e4238e3bf0441363caa41db
 </resources>
