@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NouaActivitate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adaugare Cutie Bomboane"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nume produs"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marca"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etGramaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gramaj"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etNumarBomboane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numar bomboane"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etDataExpirare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data expirare"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/cbDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tip bomboane" />
+
+        <Spinner
+            android:id="@+id/spinnerTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salveaza" />
+
+    </LinearLayout>
+
+</LinearLayout>

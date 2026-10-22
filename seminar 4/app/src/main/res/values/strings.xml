@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">seminar 3</string>
+    <string name="apasa">Apasa</string>
+    <string name="exemplu_ion">Exemplu: Ion</string>
+    <string name="praline_ferrero">Praline Ferrero</string>
+    <string name="marca">Marca</string>
+    <string name="nume">Nume</string>
+    <string name="gramaj">Gramaj</string>
+    <string name="numar_bomboane">Numar bomboane</string>
+    <string name="data_expirare">Data expirare</string>
+</resources>
