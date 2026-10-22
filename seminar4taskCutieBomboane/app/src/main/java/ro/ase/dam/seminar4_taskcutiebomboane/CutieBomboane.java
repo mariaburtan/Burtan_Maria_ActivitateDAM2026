@@ -75,7 +75,7 @@ public class CutieBomboane implements Serializable {
     @Override
     public String toString() {
         return "CutieBomboane{" +
-                "name='" + name + '\'' +
+                "nume='" + name + '\'' +
                 ", marca='" + marca + '\'' +
                 ", gramaj=" + gramaj +
                 ", numar_bomboane=" + numar_bomboane +
