@@ -1,4 +1,4 @@
-package ro.ase.dam.seminar3;
+package ro.ase.dam.seminar4;
 
 import android.content.Context;
 
