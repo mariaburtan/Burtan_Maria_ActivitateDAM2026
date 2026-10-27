@@ -3,7 +3,9 @@ package ro.ase.dam.seminar4_taskcutiebomboane;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -17,7 +19,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<CutieBomboane> list=new ArrayList<>();
+    private ListView lvCutii;
+    private ArrayAdapter<CutieBomboane> adapter;
+    ArrayList<CutieBomboane> list = new ArrayList<>();
 
 
     @Override
@@ -29,16 +33,34 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
         });
-
     }
 
-    public void culegereDate()
+    public void culegereDate(Intent data)
     {
+        if(data != null)
+        {
+            CutieBomboane cutie =(CutieBomboane) data.getSerializableExtra("cutie_bomboane");
 
+            if(cutie != null)
+            {
+                list.add(cutie);
+
+                Toast.makeText(this, cutie.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
+    public void afisareLista(View view)
+    {
+        Intent intent = new Intent(this, VizualizareDate.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("lista_cutii", list);
+
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 
     public void addCutie(View view)
     {
@@ -49,18 +71,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==37)
-        {
-            if(resultCode==RESULT_OK)
-            {
-                CutieBomboane cutie=(CutieBomboane) data.getExtras().getSerializable("cutie_bomboane");
 
-                if(cutie!=null)
-                {
-                    Toast.makeText(this,cutie.toString(),Toast.LENGTH_LONG).show();
-                    list.add(cutie);
-                }
-            }
+        if(requestCode == 37 && resultCode == RESULT_OK)
+        {
+            culegereDate(data);
         }
     }
+
 }

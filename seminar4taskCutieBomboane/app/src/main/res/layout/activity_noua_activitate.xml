@@ -67,8 +67,8 @@
             android:id="@+id/btnSalvare"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salvează Cutia"
-            android:onClick="adaugareCutie"/>
+            android:onClick="adaugareCutie"
+            android:text="Salvează Cutia" />
 
     </LinearLayout>
 
